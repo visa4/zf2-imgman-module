@@ -1,5 +1,10 @@
 <?php
 $config = [
+    'controllers' => [
+        'invokables' => [
+            'Application\Controller\Index' => 'Application\Controller\IndexController'
+        ],
+    ],
     'view_manager' => [
         'template_path_stack' => [
             __DIR__ . '/../view',
