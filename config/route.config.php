@@ -5,7 +5,7 @@ return [
             'test-image' => [
                 'type'    => 'Segment',
                 'options' => [
-                    'route'    => '/test-image',
+                    'route'    => '/test-image-i',
                     'defaults' => [
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller'    => 'Index',
