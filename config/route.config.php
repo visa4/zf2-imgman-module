@@ -2,7 +2,7 @@
 return [
     'router' => [
         'routes' => [
-            'get-test-image' => [
+            'test-image' => [
                 'type'    => 'Segment',
                 'options' => [
                     'route'    => '/test-image',
