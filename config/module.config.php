@@ -2,7 +2,7 @@
 $config = [
     'controllers'           => [
         'invokables' => [
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'ImgManModule\Controller\Index' => 'ImgManModule\Controller\IndexController'
         ],
     ],
     'view_manager' => [

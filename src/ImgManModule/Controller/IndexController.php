@@ -6,7 +6,7 @@ use Zend\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
-    public function testImageAction()
+    public function dispatchImageAction()
     {
         $viewModel = new ViewModel();
         return $viewModel;

@@ -2,14 +2,14 @@
 return [
     'router' => [
         'routes' => [
-            'test-image' => [
+            'dispatch-image' => [
                 'type'    => 'Segment',
                 'options' => [
-                    'route'    => '/test-image-i',
+                    'route'    => '/dispatch-image',
                     'defaults' => [
-                        '__NAMESPACE__' => 'Application\Controller',
+                        '__NAMESPACE__' => 'ImgManModule\Controller',
                         'controller'    => 'Index',
-                        'action'        => 'test-image',
+                        'action'        => 'dispatch-image',
                     ],
                 ],
             ],
