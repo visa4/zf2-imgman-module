@@ -36,7 +36,7 @@ return [
                     ],
                     'compression' => [
                         'compression' => \Imagick::COMPRESSION_JPEG2000,
-                        'compressionQuality' => 45
+                        'compressionQuality' => 10
                     ]
 
                 ]

@@ -20,11 +20,11 @@ class IndexController extends AbstractActionController
         $entity = new ImageEntity(__DIR__. '/../../prova.png');
         $serviceImgMan->grab($entity, 'prova/prova/prova');
 
-        //$image = $serviceImgMan->get('prova/prova/prova', 'original');
+        $image = $serviceImgMan->get('prova/prova/prova', 'original');
 
       // $image = $serviceImgMan->get('prova/prova/prova', 'thumb');
 
-        $image = $serviceImgMan->get('prova/prova/prova', 'thumbMaxi');
+      //  $image = $serviceImgMan->get('prova/prova/prova', 'thumbMaxi');
 
         header("Content-Type: " . $image->getMimeType());
         header("Content-Size: " . strlen($image->getBlob()));
