@@ -26,13 +26,13 @@ class IndexController extends AbstractActionController
 
         $image = $serviceImgMan->get('prova/prova/prova', 'thumbMaxi');
 
-       // header("Content-Type: " . $image->getMimeType());
-      //  header("Content-Size: " . strlen($image->getBlob()));
+        header("Content-Type: " . $image->getMimeType());
+        header("Content-Size: " . strlen($image->getBlob()));
 
-//        echo $image->getBlob();
+        echo $image->getBlob();
      //   var_dump('ccccc');
 
-       // exit;
+        exit;
         //return $viewModel->setVariable('img', $image);
     }
 } 

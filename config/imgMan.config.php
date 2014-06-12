@@ -28,12 +28,17 @@ return [
                 ],
                 'thumbMaxi' => [
                     'resize' => [
-                        'width'  => 800,
-                        'height' => 800
+                        'width'  => 1500,
+                        'height' => 500
                     ],
                     'format' => [
                         'format' => 'jpeg'
+                    ],
+                    'compression' => [
+                        'compression' => \Imagick::COMPRESSION_JPEG2000,
+                        'compressionQuality' => 45
                     ]
+
                 ]
             ],
         ],
