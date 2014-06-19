@@ -9,8 +9,15 @@
     },
     "require-dev": {
         "phpunit/phpunit": "4.0.*",
-        "zendframework/zendframework": "dev-master"
+        "zendframework/zendframework": "dev-master",
+        "visa4/img-man": "dev-develop"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/visa4/img-man.git"
+        }
+    ],
     "authors": [
         {
             "name": "Leonardo Grasso",

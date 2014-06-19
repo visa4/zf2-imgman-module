@@ -1,7 +1,7 @@
 <?php
 namespace ImgManModule\Controller;
 
-use ImgManLibrary\Entity\ImageEntity;
+use ImgManLibrary\Image\ImageContainer;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
@@ -18,10 +18,10 @@ class IndexController extends AbstractActionController
         $serviceImgMan->delete('prova/prova/prova', 'thumbMaxi');
         $serviceImgMan->delete('prova/prova/prova', 'ex');
 
-        $entity = new ImageEntity(__DIR__. '/../../prova.png');
+        $entity = new ImageContainer(__DIR__. '/../../../prova.png');
         $serviceImgMan->grab($entity, 'prova/prova/prova');
 
-        $image = $serviceImgMan->get('prova/prova/prova', 'ex');
+        $image = $serviceImgMan->get('prova/prova/prova', 'thumb');
 
         // $image = $serviceImgMan->get('prova/prova/prova', 'thumb');
 
@@ -30,7 +30,7 @@ class IndexController extends AbstractActionController
         header("Content-Type: " . $image->getMimeType());
         header("Content-Size: " . strlen($image->getBlob()));
 
-        echo $image->getBlob();
+         echo $image->getBlob();
         //   var_dump('ccccc');
 
         exit;
