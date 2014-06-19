@@ -1,8 +1,8 @@
 <?php
 $config = [
-    'controllers' => [
+    'controllers'           => [
         'invokables' => [
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'ImgManModule\Controller\Index' => 'ImgManModule\Controller\IndexController'
         ],
     ],
     'view_manager' => [
@@ -13,5 +13,6 @@ $config = [
 ];
 
 $routeConfig   = include __DIR__ . '/route.config.php';
+$imgManConfig   = include __DIR__ . '/imgMan.config.php';
 
-return array_merge($config, $routeConfig);
+return array_merge($config, $routeConfig, $imgManConfig);
